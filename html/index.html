@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>To-Do List</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,14 +11,32 @@
     <link href="../css/toDoList.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header text-->
-    <h1>my to-do toDo list</h1>
-    <!-- 3 paragraphs for instructions -->
-    <p>enter what you need to do into the input field and hit submit to add items to your list.</p>
-    <p>click the item to mark it as complete.</p>
-    <p>click the "x," to remove item form your to-do list.</p>
-    <!-- Input for the to-do items -->
-    <!-- Submit button -->
+    <div class="container">
+        <!-- header text -->
+        <div class="row">
+            <div class="col-12">
+            <!-- ^ This div will take up all 12 columns in one row -->
+                <h1>my to-do list</h1>
+            </div>
+        </div>
+        <!-- Instruction text -->
+        <div class="row">
+            <div class="col-12">
+                <!-- 3 paragraphs for instructions -->
+                <p>Enter what you need to do into the input field and click submit to add items to your list.</p>
+                <p>Click the item to mark it as complete.</p>
+                <p>Click the "X" to remove item from your to-do list.</p>
+            </div>
+        </div>
+        <!-- Input for the to-do items -->
+        <div class="row">
+            <div class="col-12">
+                <input type="text" placeholder="What do you need to do?">
+            </div>
+        </div>
+        <!-- Submit button -->
+        <input type="submit">
+    </div>
     <!-- Display to-do list -->
     <!-- toDoList.js script -->
     <script type="text/javascript" src="../js/toDoList.js"></script>
