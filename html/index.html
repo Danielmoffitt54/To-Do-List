@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- toDoList.css link -->
     <link href="../css/toDoList.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -23,21 +25,27 @@
         <div class="row">
             <div class="col-12">
                 <!-- 3 paragraphs for instructions -->
-                <p>Enter what you need to do into the input field and click submit to add items to your list.</p>
-                <p>Click the item to mark it as complete.</p>
-                <p>Click the "X" to remove item from your to-do list.</p>
+                <p id="instruction1">Enter what you need to do into the input field and click submit to add items to your list.</p>
+                <p id="instruction2">Click the item to mark it as complete.</p>
+                <p id="instruction3">Click the "X" to remove item from your to-do list.</p>
             </div>
         </div>
         <!-- Input for the to-do items -->
         <div class="row">
             <div class="col-12">
-                <input type="text" placeholder="What do you need to do?">
+                <input id="userInput" type="text" placeholder="What do you need to do?">
+                <button id="submit">Submit</button>
             </div>
         </div>
-        <!-- Submit button -->
-        <input type="submit">
-    </div>
-    <!-- Display to-do list -->
+        <!-- Display to-do list -->
+        <div class="row">
+            <div class="col-12">
+                <ul>
+                    <li style="display: none;">Test</li> 
+                    <!-- List start empty and we will add items through JS-->
+                </ul>
+            </div>
+        </div>
     <!-- toDoList.js script -->
     <script type="text/javascript" src="../js/toDoList.js"></script>
     <!-- Bootstrap scripts -->

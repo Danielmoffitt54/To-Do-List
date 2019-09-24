@@ -1,8 +1,84 @@
 body {
     margin: 0;
+    background-color: #49a6bf;
     text-align: center;
+    font-family: 'Maven Pro', sans-serif;
 }
 
+/* Applies to the main page heading text */
 h1 {
+    margin: 25px 0;
     text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Rules for the instruction text below the  */
+#instruction1 {
+    color: white;
+}
+
+#instruction2 {
+    color: white;
+}
+
+#instruction3 {
+    color: white;
+}
+
+/* Styles for the input element used  */
+input {
+    min-width: 65%;
+        /* ^ This element's width must be at least 65% of the width of the container */
+}
+
+#submit {
+    background-color: #34ebbd;
+    border: none;
+    transition-delay: 0s;
+        /* ^ Allows us to add a delay before an animation starts */
+    transition-duration: 5s;
+        /* ^ Allows us to control how long the animation takes */
+    transition-property: background-color;
+        /* ^ Allows us to specify what property will be animated for the transition */
+    transition-timing-function: ease-in;
+        /* ^ Allows us to modify the speed of the animation, such as starting out slow and then speeding up */
+    transition: background-color 1.5s ease 1s;
+        /* Shorthand: property duration timing-function delay */
+}
+
+#submit:hover {
+    background-color: #d3eb34; 
+}
+
+/* Styles for the ul and li */
+ul {
+    margin: 20px;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #003ffc;
+    border: solid 2px black;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+        /* ^ Webkit, for Safari and Opera */
+    -moz-transition: all 0.75s ease;
+        /* ^ Mozilla, for Firefox */
+    -o-transition: all 0.75s ease;
+        /* ^ Opera */
+}
+
+li:hover {
+    background-color: #3292d1;
+}
+
+/* Styles for when a list item is marked done  */
+.done {
+    background-color: #40f756 !important;
 }
