@@ -82,3 +82,18 @@ li:hover {
 .done {
     background-color: #40f756 !important;
 }
+
+/* Styles for when a list item is deleted  */
+.delete {
+    display: none;
+}
+
+/* Style for the delete buttin the list items  */
+li > button {
+    /* ^ Target any item whose parent element is a list item */
+    float: right;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+}
